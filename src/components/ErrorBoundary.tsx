@@ -1,18 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import Link from 'next/link'
 
 class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean }> {
   constructor(props: { children: React.ReactNode }) {
-    super(props);
-    this.state = { hasError: false };
+    super(props)
+    this.state = { hasError: false }
   }
 
   static getDerivedStateFromError(error: Error) {
-    return { hasError: true };
+    return { hasError: true }
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Error caught by boundary:', error, errorInfo);
+    console.error('Error caught by boundary:', error, errorInfo)
   }
 
   render() {
@@ -23,7 +23,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Something went wrong</h1>
             <p className="text-gray-600 mb-8">We're sorry, but something unexpected happened.</p>
             <Link 
-              to="/"
+              href="/"
               onClick={() => this.setState({ hasError: false })}
               className="inline-block bg-[#0046be] hover:bg-[#003494] text-white px-6 py-3 rounded-lg transition-colors duration-300"
             >
@@ -31,11 +31,11 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
             </Link>
           </div>
         </div>
-      );
+      )
     }
 
-    return this.props.children;
+    return this.props.children
   }
 }
 
-export default ErrorBoundary;
+export default ErrorBoundary
