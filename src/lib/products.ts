@@ -1,13 +1,13 @@
 import type { Product } from '@/types/product'
 
-// Pre-load all products at module level
+// Pre-load all products at module level for better performance
 const productModules = import.meta.glob('../products/*/product.json', { 
   eager: true,
   import: 'default'
 })
 
 // Convert modules to products once at initialization
-const allProducts = Object.entries(productModules).map(([path, module]) => {
+const allProducts: Product[] = Object.entries(productModules).map(([path, module]) => {
   const slug = path.split('/')[2]
   return {
     id: slug,
@@ -16,7 +16,7 @@ const allProducts = Object.entries(productModules).map(([path, module]) => {
   }
 })
 
-// Cache products in memory
+// Cache products in memory for faster access
 let productsCache: Product[] | null = null
 
 export async function getProducts(): Promise<Product[]> {
@@ -40,7 +40,7 @@ export async function getFeaturedProducts(): Promise<Product[]> {
     await getProducts()
   }
   return (productsCache || [])
-    .sort((a, b) => b.slug.localeCompare(a.slug))
+    .sort((a, b) => b.rating - a.rating)
     .slice(0, 3)
 }
 

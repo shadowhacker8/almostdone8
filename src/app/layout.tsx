@@ -47,6 +47,7 @@ export default function RootLayout({
             height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
         </noscript>
         {children}
+        
         {/* WhatsApp Button */}
         <a 
           href="https://wa.me/+17176484487?text=Hello%2C%20i%20need%20more%20informations%20about%20this%20offer!"

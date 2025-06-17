@@ -6,10 +6,22 @@ const nextConfig = {
     unoptimized: true
   },
   experimental: {
-    optimizeCss: true
+    optimizeCss: false
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production'
+  },
+  webpack: (config, { isServer }) => {
+    // Optimize for static export
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      }
+    }
+    return config
   }
 }
 
