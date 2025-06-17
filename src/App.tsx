@@ -40,7 +40,7 @@ function App() {
           <Route path="/return-policy" element={<ReturnPolicyPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms" element={<TermsPage />} />
-          <Route path="/product/:slug" element={<ProductPage />} />
+          <Route path="/products/:slug" element={<ProductPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/track" element={<TrackPage />} />
           <Route path="/contact" element={<ContactPage />} />

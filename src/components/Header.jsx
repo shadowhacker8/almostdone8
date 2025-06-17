@@ -86,7 +86,7 @@ const Header = () => {
   };
 
   const handleProductSelect = (product) => {
-    navigate(`/product/${product.slug}`);
+    navigate(`/products/${product.slug}`);
     setIsSearchOpen(false);
     setSearchQuery('');
     setFilteredProducts([]);

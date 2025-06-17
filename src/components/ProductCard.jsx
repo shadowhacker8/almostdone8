@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-      <Link to={`/product/${slug}`} className="block">
+      <Link to={`/products/${slug}`} className="block">
         <img 
           src={images[0]} 
           alt={title}

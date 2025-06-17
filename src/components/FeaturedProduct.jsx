@@ -56,13 +56,13 @@ const FeaturedProduct = ({ product }) => {
           {/* Actions */}
           <div className="mt-8 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
             <button 
-              onClick={() => preventScrollOnClick(() => navigate(`/product/${slug}`), true)}
+              onClick={() => preventScrollOnClick(() => navigate(`/products/${slug}`), true)}
               className="flex-1 bg-[#0046be] hover:bg-[#003494] text-white py-3 px-6 rounded-lg font-medium transition-colors duration-300"
             >
               Add to Cart
             </button>
             <Link 
-              to={`/product/${slug}`}
+              to={`/products/${slug}`}
               className="flex-1 flex items-center justify-center border border-[#0046be] text-[#0046be] hover:bg-blue-50 py-3 px-6 rounded-lg font-medium transition-colors duration-300"
             >
               View Details

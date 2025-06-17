@@ -190,7 +190,7 @@ const CheckoutPage: React.FC = () => {
       <Header />
       <main className="flex-grow py-8">
         <div className="container mx-auto px-4">
-          <Link to={`/product/${product.slug}`} className="inline-flex items-center text-[#0046be] hover:text-[#003494] mb-8">
+          <Link to={`/products/${product.slug}`} className="inline-flex items-center text-[#0046be] hover:text-[#003494] mb-8">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Product
           </Link>
