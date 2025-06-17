@@ -1,25 +1,23 @@
-'use client'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { X } from 'lucide-react';
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { X } from 'lucide-react'
-
-const CookieConsent = () => {
-  const [isVisible, setIsVisible] = useState(false)
+const CookieConsent: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const hasSeenCookieConsent = localStorage.getItem('cookieConsent')
+    const hasSeenCookieConsent = localStorage.getItem('cookieConsent');
     if (!hasSeenCookieConsent) {
-      setIsVisible(true)
+      setIsVisible(true);
     }
-  }, [])
+  }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('cookieConsent', 'true')
-    setIsVisible(false)
-  }
+    localStorage.setItem('cookieConsent', 'true');
+    setIsVisible(false);
+  };
 
-  if (!isVisible) return null
+  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t z-50 p-4 md:p-6">
@@ -27,7 +25,7 @@ const CookieConsent = () => {
         <div className="flex-grow text-center sm:text-left">
           <p className="text-gray-700">
             We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{' '}
-            <Link href="/cookies" className="text-[#0046be] hover:text-[#003494] underline">
+            <Link to="/cookies" className="text-[#0046be] hover:text-[#003494] underline">
               Learn more
             </Link>
           </p>
@@ -49,7 +47,7 @@ const CookieConsent = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CookieConsent
+export default CookieConsent;
