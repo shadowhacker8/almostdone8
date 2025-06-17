@@ -1,6 +1,6 @@
 import type { Product } from '@/types/product'
 
-// Static product data for Next.js static export
+// Complete static product data for Next.js static export
 const staticProducts: Product[] = [
   {
     id: 'canon-camera-g7x-mark-iii',
@@ -86,6 +86,64 @@ const staticProducts: Product[] = [
       title: 'Ninja SLUSHi Frozen Drink Maker 3-in-1, 72oz, New Sealed - HappyDeel',
       description: 'Brand new Ninja SLUSHi FS300 Frozen Drink Maker (sealed in original packaging). Features a 72 oz capacity, 3 speeds, and dishwasher safe parts. Perfect for making frozen drinks, slushies, and smoothies.',
       keywords: 'Ninja SLUSHi, Frozen Drink Maker, 3-in-1, 72oz, New, Sealed, Slushie Machine, Smoothie Maker, Kitchen Appliance, HappyDeel'
+    }
+  },
+  {
+    id: 'oura-ring-gen-4-silver-size-9',
+    slug: 'oura-ring-gen-4-silver-size-9',
+    title: 'Oura Ring Gen 4 - Silver - Size 9',
+    description: 'Tested, it works. It does have some scrapes and paint wear, which can be seen in the pictures. This doesn\'t affect the camera performance. The screen also has some scratches, which I provided a close-up picture of. The lens has some dust inside but no scratches. This doesn\'t affect the image quality. *No battery charger or cable* Includes - Battery (Original) - 256GB Memory Card',
+    price: 179.99,
+    rating: 4.2,
+    reviewCount: 121,
+    images: [
+      '/products/oura-ring-gen-4-silver-size-9/img1.webp',
+      '/products/oura-ring-gen-4-silver-size-9/img2.webp',
+      '/products/oura-ring-gen-4-silver-size-9/img3.webp',
+      '/products/oura-ring-gen-4-silver-size-9/img4.webp',
+      '/products/oura-ring-gen-4-silver-size-9/img5.webp',
+      '/products/oura-ring-gen-4-silver-size-9/img6.webp'
+    ],
+    condition: 'Used - Excellent Condition',
+    category: 'Health & Personal Care',
+    brand: 'Oura Ring',
+    payeeEmail: 'happyemilliano@gmail.com',
+    currency: 'USD',
+    checkoutLink: 'https://buymeacoffee.com/annahoffman/extras/checkout/9f22512f-1751-4dde-a548-45501ff5eceb',
+    meta: {
+      title: 'Oura Ring Gen 4 (Silver, Size 9) - Smart Sleep & Activity Tracker',
+      description: 'Get the Oura Ring Generation 4 in silver, size 9. This smart ring tracks sleep, activity, heart rate, and more to provide personalized health insights. Excellent used condition.',
+      keywords: 'Oura Ring, Gen 4, smart ring, health tracker, sleep tracker, activity tracker, heart rate, wellness technology, silver Oura Ring, size 9'
+    }
+  },
+  {
+    id: 'sony-wh-1000xm5-wireless-noise-cancelling-headphones-black',
+    slug: 'sony-wh-1000xm5-wireless-noise-cancelling-headphones-black',
+    title: 'Sony WH-1000XM5 Wireless Noise Cancelling Headphones - Black',
+    description: 'Pre-owned Sony WH-1000XM5 wireless noise cancelling headphones in black. Renowned for exceptional sound quality, industry-leading noise cancellation, and long battery life. Includes carrying case and charging cable. Fully tested and in excellent working condition with light cosmetic wear.',
+    price: 336,
+    rating: 4.6,
+    reviewCount: 6,
+    images: [
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img1.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img2.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img3.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img4.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img5.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img6.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img7.webp',
+      '/products/sony-wh-1000xm5-wireless-noise-cancelling-headphones-black/img8.webp'
+    ],
+    condition: 'Used',
+    category: 'Headphones',
+    brand: 'Sony',
+    payeeEmail: 'happyemilliano@gmail.com',
+    currency: 'USD',
+    checkoutLink: 'https://buymeacoffee.com/annahoffman/extras/checkout/9f22512f-1751-4dde-a548-45501ff5eceb',
+    meta: {
+      title: 'Sony WH-1000XM5 Wireless Noise Cancelling Headphones - Black - HappyDeel',
+      description: 'Pre-owned Sony WH-1000XM5 wireless noise cancelling headphones in black. Renowned for exceptional sound quality, industry-leading noise cancellation, and long battery life. Includes carrying case and charging cable.',
+      keywords: 'Sony WH-1000XM5, wireless headphones, noise cancelling, black headphones, used headphones, Sony, audio, HappyDeel'
     }
   }
 ]

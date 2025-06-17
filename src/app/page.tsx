@@ -40,10 +40,12 @@ export default function HomePage() {
 
   useEffect(() => {
     // Only notify about visitor once per session
-    const hasNotified = sessionStorage.getItem('visitorNotified')
-    if (!hasNotified) {
-      notifyVisitor()
-      sessionStorage.setItem('visitorNotified', 'true')
+    if (typeof window !== 'undefined') {
+      const hasNotified = sessionStorage.getItem('visitorNotified')
+      if (!hasNotified) {
+        notifyVisitor()
+        sessionStorage.setItem('visitorNotified', 'true')
+      }
     }
   }, [])
 

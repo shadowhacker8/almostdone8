@@ -1,6 +1,15 @@
 import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
+  const handleScrollToSection = (sectionId: string) => {
+    if (typeof window !== 'undefined') {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+
   return (
     <div className="relative bg-gradient-to-r from-[#003494] to-[#0046be] overflow-hidden">
       {/* Background pattern */}
@@ -24,19 +33,19 @@ const Hero = () => {
             We take the risk out of used gear with expert inspection and reliable service on every order.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <a 
-                href="#products" 
+              <button 
+                onClick={() => handleScrollToSection('products')}
                 className="px-8 py-3 bg-white text-[#0046be] font-medium rounded-lg shadow-md hover:bg-blue-50 transition duration-300 flex items-center justify-center"
               >
                 Shop Now
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <a 
-                href="#featured" 
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('featured')}
                 className="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300 flex items-center justify-center"
               >
                 Featured Products
-              </a>
+              </button>
             </div>
           </div>
           <div className="md:w-1/2 relative">
