@@ -9,6 +9,8 @@ export interface CartItem {
 export const CART_STORAGE_KEY = 'happydeel_cart'
 
 export function addToCart(product: Product): void {
+  if (typeof window === 'undefined') return
+  
   const cartItem: CartItem = {
     product,
     quantity: 1,
@@ -22,6 +24,8 @@ export function addToCart(product: Product): void {
 }
 
 export function getCartItem(): CartItem | null {
+  if (typeof window === 'undefined') return null
+  
   try {
     const stored = localStorage.getItem(CART_STORAGE_KEY)
     return stored ? JSON.parse(stored) : null
@@ -32,6 +36,8 @@ export function getCartItem(): CartItem | null {
 }
 
 export function clearCart(): void {
+  if (typeof window === 'undefined') return
+  
   localStorage.removeItem(CART_STORAGE_KEY)
   window.dispatchEvent(new CustomEvent('cartUpdated'))
 }

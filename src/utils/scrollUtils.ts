@@ -1,4 +1,6 @@
 export const preventScrollOnClick = (callback: () => void, shouldScrollToTop: boolean = false) => {
+  if (typeof window === 'undefined') return
+  
   // Prevent focus and maintain scroll position
   const activeElement = document.activeElement as HTMLElement
   if (activeElement) {
