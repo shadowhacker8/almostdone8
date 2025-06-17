@@ -22,64 +22,33 @@ export default function TermsPage() {
           <div className="bg-white rounded-xl shadow-sm p-6 lg:p-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms of Service</h1>
             
-            <div className="prose max-w-none text-gray-600 space-y-6">
-              <p className="text-sm text-gray-500">Last updated: December 2024</p>
-              
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
-                <p>By accessing and using HappyDeel's website and services, you accept and agree to be bound by the terms and provision of this agreement.</p>
-              </section>
+            <div className="prose max-w-none text-gray-600">
+              <p className="text-sm text-gray-500 mb-6">Last updated: January 1, 2025</p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Use License</h2>
-                <p>Permission is granted to temporarily download one copy of the materials on HappyDeel's website for personal, non-commercial transitory viewing only.</p>
-                <p className="mt-4">This license shall automatically terminate if you violate any of these restrictions and may be terminated by HappyDeel at any time.</p>
-              </section>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Acceptance of Terms</h2>
+              <p className="mb-4">
+                By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.
+              </p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Product Information</h2>
-                <p>We strive to provide accurate product descriptions and pricing. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, current, or error-free.</p>
-              </section>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Use License</h2>
+              <p className="mb-4">
+                Permission is granted to temporarily download one copy of the materials on HappyDeel's website for personal, non-commercial transitory viewing only.
+              </p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Pricing and Payment</h2>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>All prices are subject to change without notice</li>
-                  <li>Payment must be received before products are shipped</li>
-                  <li>We accept major credit cards and PayPal</li>
-                  <li>All transactions are processed securely</li>
-                </ul>
-              </section>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Disclaimer</h2>
+              <p className="mb-4">
+                The materials on HappyDeel's website are provided on an 'as is' basis. HappyDeel makes no warranties, expressed or implied.
+              </p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Shipping and Delivery</h2>
-                <p>We offer free shipping to US and Canada customers. Delivery times may vary based on location and product availability.</p>
-              </section>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Limitations</h2>
+              <p className="mb-4">
+                In no event shall HappyDeel or its suppliers be liable for any damages arising out of the use or inability to use the materials on HappyDeel's website.
+              </p>
 
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Returns and Refunds</h2>
-                <p>We offer a 30-day return policy for most items. Products must be returned in original condition. Please see our Return Policy for complete details.</p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Limitation of Liability</h2>
-                <p>In no event shall HappyDeel or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on HappyDeel's website.</p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Governing Law</h2>
-                <p>These terms and conditions are governed by and construed in accordance with the laws of Ohio, USA.</p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Contact Information</h2>
-                <p>For questions about these Terms of Service, please contact us:</p>
-                <div className="mt-4">
-                  <p>Email: support@happydeel.com</p>
-                  <p>Phone: +17176484487</p>
-                  <p>Address: 1726 Parsons Ave, Columbus, OH 43207, USA</p>
-                </div>
-              </section>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contact Information</h2>
+              <p className="mb-4">
+                If you have any questions about these Terms of Service, please contact us at support@happydeel.com.
+              </p>
             </div>
           </div>
         </div>
